@@ -1,0 +1,22 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: hello_rails_react_development
+  pool: 5
+  host: localhost
+  username: postgres
+  password: basit
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: hello_rails_react_test
+  pool: 5
+  username: postgres
+  password: basit
+
+staging:
+  url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  url: <%= ENV['DATABASE_URL'] %>
